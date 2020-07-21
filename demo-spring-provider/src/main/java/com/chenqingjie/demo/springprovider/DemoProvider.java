@@ -2,10 +2,10 @@ package com.chenqingjie.demo.springprovider;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.web.servlet.ServletComponentScan;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @SpringBootApplication(scanBasePackages = {"com.chenqingjie.demo.springprovider"})
-// @ServletComponentScan
+@EnableDiscoveryClient
 public class DemoProvider {
 
   public static void main(String[] args) {

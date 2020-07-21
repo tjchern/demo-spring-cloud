@@ -1,7 +1,7 @@
 variable:
   profiles: dev
 server:
-  port: 8083
+  port: 8082
 spring:
   application:
     name: demo-spring-eureka
