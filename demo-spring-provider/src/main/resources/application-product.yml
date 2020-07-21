@@ -1,0 +1,7 @@
+variable:
+  profiles: product
+spring:
+  application:
+    name: demo-spring-provider
+server:
+  port: 8081
