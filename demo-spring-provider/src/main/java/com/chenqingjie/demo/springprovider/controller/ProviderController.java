@@ -14,6 +14,6 @@ public class ProviderController {
   @GetMapping("/{id}")
   public String queryById(@PathVariable("id") Long id) {
     logger.info("id: {}", id);
-    return "user id: " + id;
+    return "provider id: " + id;
   }
 }
