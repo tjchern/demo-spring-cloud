@@ -11,6 +11,8 @@
     <module>demo-spring-provider</module>
     <module>demo-spring-consumer</module>
     <module>demo-spring-eureka</module>
+    <module>demo-spring-consumer-feign</module>
+
   </modules>
   <packaging>pom</packaging>
   <parent>
