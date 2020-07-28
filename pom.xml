@@ -12,7 +12,9 @@
     <module>demo-spring-consumer</module>
     <module>demo-spring-eureka</module>
     <module>demo-spring-consumer-feign</module>
-
+    <module>demo-spring-consumer-hystrix</module>
+    <module>demo-spring-consumer-feign-hystrix</module>
+    <module>demo-spring-zuul</module>
   </modules>
   <packaging>pom</packaging>
   <parent>

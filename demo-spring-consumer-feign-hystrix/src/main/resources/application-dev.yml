@@ -1,0 +1,19 @@
+variable:
+  profiles: dev
+spring:
+  application:
+    name: demo-spring-consumer-feign-hystrix
+  main:
+    allow-bean-definition-overriding: true
+server:
+  port: 8085
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8082/eureka
+  instance:
+    prefer-ip-address: true
+    ip-address: 127.0.0.1
+feign:
+  hystrix:
+    enabled: true

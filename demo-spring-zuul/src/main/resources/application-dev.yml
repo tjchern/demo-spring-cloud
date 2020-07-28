@@ -1,0 +1,28 @@
+variable:
+  profiles: dev
+spring:
+  application:
+    name: demo-spring-zuul
+  main:
+    allow-bean-definition-overriding: true
+server:
+  port: 8086
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8082/eureka
+  instance:
+    prefer-ip-address: true
+    ip-address: 127.0.0.1
+zuul:
+  routes:
+    demo-spring-zuul: # do not work, why ?
+      path: /consumer/**
+      url: forward:/consumer
+#      url: http://localhost:8086/consumer/
+    api-a:
+      path: /api-provider/**
+      serviceId: demo-spring-provider
+    api-b:
+      path: /api-consumer/**
+      serviceId: demo-spring-consumer-feign-hystrix
